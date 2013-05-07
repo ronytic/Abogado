@@ -1,0 +1,55 @@
+<?php
+$folder="../../";
+$titulo="Modificar Palabra";
+$narchivo="palabra";
+include_once("../../class/".$narchivo.".php");	
+${$narchivo}=new $narchivo;
+extract($_GET);
+$datos=${$narchivo}->mostrar($id);
+$datos=array_shift($datos);
+
+
+$n1archivo="area";
+include_once("../../class/".$n1archivo.".php");	
+${$n1archivo}=new $n1archivo;
+extract($_GET);
+$areas=todolista(${$n1archivo}->mostrarTodo(),"CodArea","Nombre","");
+
+include_once($folder."funciones/funciones.php");
+include_once($folder."cabecerahtml.php");
+?>
+<?php include_once($folder."cabecera.php");?>
+<div class="container_12" id="cuerpo">
+	<div class="prefix_2 grid_4">
+    	<fieldset>
+        	<legend><?php echo $titulo?></legend>
+            <form action="actualizar.php" method="post">
+            	<?php campos("","id","hidden",$id)?>
+            	<table class="tablareg">
+                <tr>
+                    	<td>
+                        	<?php echo campos("Área:","CodArea","select",$areas,0,"",$datos['CodArea']);?>
+                        </td>
+					</tr>
+                	<tr>
+                    	<td>
+                        	<?php echo campos("Palabra:","nombre","text",$datos['Nombre'],1,array("size"=>40));?>
+                        </td>
+					</tr>
+                    <tr>
+                    	<td>
+                        	<?php echo campos("Descripción:","descripcion","textarea",$datos['Descripcion'],1,array("cols"=>70,"rows"=>25));?>
+                        </td>
+					</tr>
+                    <tr>
+                    	<td>
+                        	<?php echo campos("Guardar","","submit");?>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+    <div class="clear"></div>
+</div>
+<?php include_once($folder."pie.php");?>

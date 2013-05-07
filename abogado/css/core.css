@@ -1,0 +1,270 @@
+ul{margin:0;}
+/* CSS Document */
+.corner-tl { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; }
+.corner-tr { -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; }
+.corner-bl { -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; }
+.corner-br { -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; }
+.corner-top { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; }
+.corner-bottom { -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; }
+.corner-right {  -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; }
+.corner-left { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; }
+.corner-all,.corner-all td{ -moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;}
+/*Diseño de la pagina*/
+body{
+	background-color:#ececec;
+}
+#cabecera{
+	background-color:#3366CC;	
+	border:# 2px double;
+	color:#FFFFFF;
+	font-weight:bold;
+	height:200px;
+	padding:5px;
+	text-align:center;
+	background : -linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -moz-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -ms-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%); 
+	background : -o-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -webkit-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	padding:5px 0px 5px 0px;	
+	height:100px;
+	font-size:24px;	
+	cursor:default;
+}
+#cabecera h1{
+	color:#FFF;
+	font-size: 35px;
+	text-shadow:2px 2px 0px #000;
+	text-align:center;
+	margin:10px;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
+	 padding:10px;
+}
+#cabecera img{
+	float:left;
+	height:90px;
+	 -moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
+	 padding:5px;
+	background-color:#FFF;
+}
+.pie{
+	border:#0094c1 solid 1px;
+	padding:3px;
+	margin-bottom:5px;
+}
+hr{
+margin:5px;	
+}
+#cuerpo{
+	background-color:#FFF;
+	padding:5px 0px 5px 0px;
+}
+#footer{
+	background-color:#FFF;
+	text-align:center;
+}
+.cuerpo{
+	background-color:#FFF;
+	padding:3px;
+	border:#e9e8e8 1px solid;
+	margin-bottom:5px;
+	
+}
+.cuerpo div{
+	text-align:center;
+}
+
+
+/*BOTON*/
+a.botonverde,a.botonrojo,a.botonnaranja,a.botonazul{
+	color:#FFF;	
+	padding:10px;
+	display:block;
+	margin:20px 0px 20px 0px;
+	font-weight:bold;
+	font-size:27px;
+	text-decoration:none;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
+	text-align:center;
+	box-shadow:#333 3px 3px 5px;
+	text-shadow:#333 1px 1px 3px;
+}
+a.botonrojo{
+	background : -linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);	
+	background : -moz-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);
+	background : -ms-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%); 
+	background : -o-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);
+	background : -webkit-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);
+}
+a.botonrojo:hover,a.botonrojo:active{
+	background : -linear-gradient(top, rgb(204, 68, 61) 00%, rgb(189, 54, 47) 100%);	
+	background : -moz-linear-gradient(top, rgb(204, 68, 61) 00%, rgb(189, 54, 47) 100%);
+	background : -ms-linear-gradient(top, rgb(204, 68, 61) 00%, rgb(189, 54, 47) 100%); 
+	background : -o-linear-gradient(top, rgb(204, 68, 61) 00%, rgb(189, 54, 47) 100%);
+	background : -webkit-linear-gradient(top, rgb(204, 68, 61) 00%, rgb(189, 54, 47) 100%);	
+}
+a.botonnaranja{
+	background : -linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);	
+	background : -moz-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);
+	background : -ms-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%); 
+	background : -o-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);
+	background : -webkit-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);
+}
+a.botonnaranja:hover,a.botonnaranja:active{
+	background : -webkit-linear-gradient(top, rgb(250, 165, 47) 00%, rgb(248, 147, 6) 99%);
+	background : -moz-linear-gradient(top, rgb(250, 165, 47) 00%, rgb(248, 147, 6) 99%);
+	background : -o-linear-gradient(top, rgb(250, 165, 47) 00%, rgb(248, 147, 6) 99%);
+	background : -ms-linear-gradient(top, rgb(250, 165, 47) 00%, rgb(248, 147, 6) 99%); 
+	background : -linear-gradient(top, rgb(250, 165, 47) 00%, rgb(248, 147, 6) 99%);	
+}
+a.botonazul{
+	background : -linear-gradient(top, rgb(89, 189, 220) 00%, rgb(48, 149, 180) 100%);	
+	background : -moz-linear-gradient(top, rgb(89, 189, 220) 00%, rgb(48, 149, 180) 100%);
+	background : -ms-linear-gradient(top, rgb(89, 189, 220) 00%, rgb(48, 149, 180) 100%); 
+	background : -o-linear-gradient(top, rgb(89, 189, 220) 00%, rgb(48, 149, 180) 100%);
+	background : -webkit-linear-gradient(top, rgb(89, 189, 220) 00%, rgb(48, 149, 180) 100%);
+}
+a.botonazul:active,a.botonazul:hover{
+	background : -webkit-linear-gradient(top, rgb(71, 172, 203) 00%, rgb(47, 149, 180) 99%);
+	background : -moz-linear-gradient(top, rgb(71, 172, 203) 00%, rgb(47, 149, 180) 99%);
+	background : -o-linear-gradient(top, rgb(71, 172, 203) 00%, rgb(47, 149, 180) 99%);
+	background : -ms-linear-gradient(top, rgb(71, 172, 203) 00%, rgb(47, 149, 180) 99%); 
+	background : -linear-gradient(top, rgb(71, 172, 203) 00%, rgb(47, 149, 180) 99%);
+}
+a.letra{
+	display: inline-block;
+	
+	padding:6px;
+}
+a.palabra{
+	text-decoration: none;
+	display:inline-block;
+	text-align:center;
+	vertical-align:central;
+	font-size: 1.5em;
+	padding:5px;
+	margin: 3px;
+	background-color:#FFF;	
+	
+}
+.modificar,.eliminar{
+	display:inline-block;
+	text-align:center;
+	vertical-align:central;
+	border:#CCCCCC 1px solid;
+	border-radius:5px;
+	padding:3px;
+	background-color:#FFF;	
+}
+.modificar:hover,.eliminar:hover{
+	background-color:#FFFFCC	
+}
+/*FIN DEL BOTON*/
+fieldset{
+	border:#006699 1px solid;	
+	padding:10px;
+	border-radius:5px;
+}
+fieldset legend{
+	text-align:right;
+	border-radius:5px;
+	color:#FFF;
+	font-weight:bold;
+	border:#006699 1px solid;	
+	padding:10px;
+	background : -linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -moz-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -ms-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%); 
+	background : -o-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -webkit-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	cursor:default;
+}
+/*CAMPOS DE FORMULARIO*/
+.tablareg td{
+	padding:0px 10px 0px 10px;	
+}
+.tablareg label{
+	display:block;
+}
+.tablareg input,.tablareg textarea,.tablareg select,.tablareg select option{
+	padding:10px;
+	margin:10px 0px 10px 0px;
+	border:#CCCCCC 1px solid;	
+}
+.tablareg input:focus,.tablareg textarea:focus,.tablareg select:focus{
+	box-shadow:#09C 0px 0px 3px;
+}
+.tablareg input[type=submit]{
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#06C;
+	border-radius:5px;	
+}
+.tablareg input[type=submit]:hover{
+	background-color:#06F
+}
+.tablalistado{
+ margin:0 auto;	
+}
+.tablalistado td{
+	padding:10px;	
+}
+.tablalistado tr.cabecera td{
+	background : -linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -moz-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -ms-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%); 
+	background : -o-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	background : -webkit-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);
+	color:#FFFFFF;
+	font-weight:bold;
+	cursor:default;
+}
+.tablalistado tr.contenido:nth-child(2n+1) td{
+	background-color:#E8FDFF;
+}
+.tablalistado tr.contenido:hover td{
+	background-color:#BDE9FD	
+}
+.tablalistado tr.contenido td{
+	border-bottom:1px solid #CCC;
+}
+
+/*FIN DE CAMPOS DE FORMULARIO*/
+#cerrar{
+	background-color: blue;
+	border-radius: 5px;
+	color: #FFF;
+	left: 10px;
+	padding: 5px;
+	text-decoration: none;
+	background : -linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);	
+	background : -moz-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);
+	background : -ms-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%); 
+	background : -o-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);
+	background : -webkit-linear-gradient(top, rgb(235, 92, 88) 00%, rgb(191, 56, 49) 100%);
+
+
+	background : -linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);	
+	background : -moz-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);
+	background : -ms-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%); 
+	background : -o-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);
+	background : -webkit-linear-gradient(top, rgb(251, 178, 75) 00%, rgb(248, 148, 9) 100%);
+	margin: 10px;
+	display: inline-block;
+}
+#cuadrocerrar{
+	
+}
+.palabraresaltar{
+	display:inline-block;
+	color:#006699;	
+	text-decoration:none;
+}
+.palabraresaltar:hover{
+	text-decoration:underline;	
+}
+.inicio{
+	background-image:url(../imagenes/juicio-balanza-justicia.jpg);
+/*	background-image:url(../imagenes/logo.png);*/
+	background-size:cover;	
+}
